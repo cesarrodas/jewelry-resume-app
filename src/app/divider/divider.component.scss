@@ -1,0 +1,22 @@
+.Divider {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.Divider-line {
+  width: 1rem;
+  display: inline-block;
+  background-color: #505050;
+  margin: 1rem;
+  height: 2px;
+  margin: 0;
+}
+
+.Divider-message {
+  color: #505050;
+  font-size: 1.2rem;
+}

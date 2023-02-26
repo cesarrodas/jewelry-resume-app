@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jewelry-resume-app';
+  dividerOne = "DESIGNER STUDIO";
+  dividerTwo = "FEATURED";
 }

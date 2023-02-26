@@ -1,0 +1,17 @@
+.Header {
+  background-color: transparent;
+  height: calc(100vh - 60px);
+  overflow-y: hidden;
+  position: relative;
+}
+
+.Header-image {
+  width: 100%;
+  position: absolute;
+  top: -60px;
+  z-index: -1;
+}
+
+.Header-title {
+  z-index: 2;
+}
