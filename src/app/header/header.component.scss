@@ -10,8 +10,23 @@
   position: absolute;
   top: -60px;
   z-index: -1;
+  filter: brightness(80%);
 }
 
 .Header-title {
   z-index: 2;
+  color: white;
+  font-size: 75px;
+  font-family: sans-serif;
+  text-align: center;
+  letter-spacing: .8rem;
+  margin-top: 10rem;
+}
+
+.Header-subtext {
+  font-size: 30px;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  letter-spacing: .2rem;
 }

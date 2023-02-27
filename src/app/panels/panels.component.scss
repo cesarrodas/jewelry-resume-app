@@ -4,3 +4,34 @@
   grid-template-rows: 2fr 1fr;
   height: 100vh;
 }
+
+.Panels-image-1 {
+  overflow-y: hidden;
+  position: relative;
+}
+
+.Panels-image-1 img {
+  filter: brightness(80%);
+  width: 1;
+  width: 100%;
+  position: absolute;
+  top: -13rem;
+}
+
+.Panels-image-2 {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.Panels-image-2 img {
+  filter: grayscale(100%);
+  width: 100%;
+  position: absolute;
+  transition: transform 1s;
+}
+
+.Panels-image-2 img:hover {
+  transform: scale(1.1);
+  transition: transform 1s;
+}
