@@ -1,0 +1,10 @@
+.ProductCard {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 2rem 2rem;
+}
+
+.ProductCard > img {
+  width: 100%;
+  max-height: 300px;
+}
