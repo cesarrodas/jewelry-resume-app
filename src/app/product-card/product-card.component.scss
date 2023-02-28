@@ -2,9 +2,20 @@
   position: relative;
   display: grid;
   grid-template-rows: 1fr 2rem 2rem;
+  padding-bottom: 2rem;
 }
 
 .ProductCard > img {
   width: 100%;
   max-height: 300px;
+}
+
+.ProductCard-name {
+  color: #404040;
+  text-align: center;
+}
+
+.ProductCard-price {
+  color: darkgray;
+  text-align: center;
 }
