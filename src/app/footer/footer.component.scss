@@ -22,6 +22,15 @@
   text-align: center;
 }
 
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  color: #404040;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 900px) {
   .Footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
