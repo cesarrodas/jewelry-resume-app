@@ -1,8 +1,7 @@
 .Panels {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
-  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 2fr 1fr 1fr;
 }
 
 .Panels-image-1 {
@@ -12,10 +11,21 @@
 
 .Panels-image-1 img {
   filter: brightness(80%);
-  width: 1;
   width: 100%;
+  height: 100%;
   position: absolute;
-  top: -13rem;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.Panels-image-1 > h2 {
+  left: 1.5rem;
+  color: #f3f3f3;
+  position: absolute;
+  bottom: 1rem;
+  font-weight: 100;
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .Panels-image-2 {
@@ -25,13 +35,97 @@
 }
 
 .Panels-image-2 img {
-  filter: grayscale(100%);
+  filter: grayscale(100%) brightness(60%);
   width: 100%;
+  height: 100%;
   position: absolute;
+  z-index: -1;
+  object-fit: cover;
   transition: transform 1s;
 }
 
 .Panels-image-2 img:hover {
   transform: scale(1.1);
   transition: transform 1s;
+}
+
+.Panels-image-2 > h2 {
+  left: 1.5rem;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  font-weight: 100;
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Panels-symbol {
+  background-color: hsl(0, 0%, 73%);
+  position: relative;
+  overflow: hidden;
+}
+
+.symbol-text {
+  color: white;
+  position: absolute;
+  left: 1rem;
+  font-size: 1.5rem;
+  width: max-content;
+}
+
+.Panels-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.Panels-social-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.Panels-social-icons > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Panels-social-icons > div > img {
+  width: 70%;
+  height: 70%;
+}
+
+.latest {
+  background: hsl(0, 0%, 73%);
+  border-top: solid 1px white;
+  border-left: solid 1px white;
+  color: white;
+  padding-left: 1rem;
+}
+
+.quart {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.symbol {
+  font-size: 36rem;
+  color:hsl(0, 1%, 47%);
+  position: absolute;
+  padding: 0;
+  left: 30%;
+  top: calc(-18rem);
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .Panels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    height: 100vh;
+  }
 }

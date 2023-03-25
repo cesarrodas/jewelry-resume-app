@@ -1,20 +1,41 @@
 .Footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   background-color: #d3d3d3;
 }
 
 .Footer-section > p {
   font-size: 20px;
-  padding-left: 1rem;
-
+  padding-left: 0;
+  text-align: center;
 }
 
 .Footer-section > ul {
   list-style: none;
+  padding: 0;
 }
 
 .Footer-section > ul > li {
   font-size: 14px;
   margin: .5rem 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  .Footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .Footer-section > p {
+    font-size: 20px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .Footer-section > ul > li {
+    font-size: 14px;
+    margin: .5rem 0;
+  }
 }
