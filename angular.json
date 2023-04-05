@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/jewelry-resume-app",
-            "baseHref": "/jewelry/",
+            "baseHref": "/jewels/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
